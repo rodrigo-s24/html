@@ -68,6 +68,7 @@ span#casa{
     display: none;
     font-size: 30px;
     text-align: center;
+    margin-left: auto;
 }
 
 @media (max-width:768px){
