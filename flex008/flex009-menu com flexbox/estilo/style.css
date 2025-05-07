@@ -64,6 +64,33 @@ span#casa{
     cursor: pointer;
 }
 
+#casa{
+    display: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media (max-width:768px){
+    #casa{
+        display: block;
+    }
+  #itens{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+  #itens.mostrar{
+    display: flex;
+  }
+  nav a{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
+}
+
 main{
     background-color: white;
     margin: 10px;
