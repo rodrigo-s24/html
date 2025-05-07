@@ -6,11 +6,15 @@
     <title>Menu Flexbox</title>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width:580px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <span id="casa" class="material-symbols-outlined" onclick="clickmenu()">
+            home
+            </span>
+        <nav id="itens">
          <a href="">Opção 1</a>
          <a href="">Opção 2</a>
          <a href="">Opção 3</a>
@@ -25,5 +29,11 @@
 
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempora quasi magnam optio laudantium odit unde non animi nisi. In nisi aperiam deserunt laudantium ea beatae dignissimos minus dicta officiis?</p>
     </main>
+    <script>
+        function clickmenu(){
+           const nav = document.getElementById('itens')
+           nav.classList.toggle('mostrar')
+        }
+    </script>
 </body>
 </html>

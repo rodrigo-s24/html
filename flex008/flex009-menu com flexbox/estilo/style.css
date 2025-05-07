@@ -52,11 +52,35 @@ header > nav > a:hover{
     transition: background-color .5s;
 }
 
+nav{
+    display: flex;
+}
+
+span#casa{
+    background-color: white;
+    color: black;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
 main{
     background-color: white;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.518);
+}
+
+@media(max-width:600px){
+    header>nav{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header>nav>a{
+        width: 100%;
+        margin: 5px 0;
+    }
 }
 

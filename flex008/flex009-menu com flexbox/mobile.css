@@ -2,7 +2,16 @@
 
 
 header,header > nav{
-    flex-flow: column nowrap;
+    flex-flow: column;
+    align-items: stretch;
+}
+
+header > nav{
+    display: none;
+}
+
+header > nav.mostrar{
+    display: flex;
 }
 
 header > h1{
@@ -11,4 +20,5 @@ header > h1{
 
 header > nav > a{
     width: 90vw;
+    margin:5px 0; 
 }
